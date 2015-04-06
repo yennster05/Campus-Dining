@@ -13,8 +13,9 @@ var tableData = [];
 	tableData[6] = 'PGA Golf Management Club';
 	tableData[7] = 'Operation Management Club';
 	tableData[8] = 'Human Resource Management Club';
-
+//creating an empty array to store the rows in
 var rowViewData = [];
+//this function is binding the rows together with the background color. Attempting to add a custom trait of 'cbeName' to each row (Matches the title data atm)
 function bindRowData (){
 for (var i=0; i<tableData.length; i++) {
 var rowView = Ti.UI.createTableViewRow({
@@ -23,17 +24,17 @@ var rowView = Ti.UI.createTableViewRow({
 	backgroundColor: '#B29600',
 	cbeName: tableData[i]
 });
+//Pushing the row data into the finished array
 rowViewData.push(rowView);
 }
 return rowViewData;
 }
-/*Simply put, adds the above data to the table. Haven't created the event listener yet that would make it interactive
- got distracted by the color thing*/
+/*Simply put, adds the above data to the table. */
 var table = Ti.UI.createTableView({
 	heardTitle: 'Pick a club to learn more!',
 	data: bindRowData()
 });
-
+//this is for the event listener, to determine the name of what you click on and then produce the data related to the CBE
 function getInfo(cbe) {
 	var indicator = cbe.charAt (1);
 	var msg;
@@ -50,7 +51,8 @@ function getInfo(cbe) {
 	}
 	return msg;
 };
-
+/*This creates a window to display the information from the above switch. Currently, it's broken and I don't know why. 
+ Suspicion is the switch isn't doing what it should be doing, but I don't know why that is*/
 function showCBE (_args) {
 	var cbeDisc = Ti.UI.createWindow({layout:'vertical'});
 	
@@ -68,7 +70,7 @@ function showCBE (_args) {
 	cbeDisc.add(close);
 	cbeDisc.open();
 }
-
+//takes the custom data from the table (matching the label titles) and passes it through the two functions above.
 table.addEventListener ('click', function(e)
 {showCBE(e.source.cbeName);});
 //Adds table to the window, then opens it
