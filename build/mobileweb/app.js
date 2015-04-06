@@ -1,6 +1,12 @@
 //Starting off with a black background as we plan to have the rows be a golden color
 Ti.UI.backgroundColor = 'Black';
 var win = Ti.UI.createWindow();
+var image = Ti.UI.createImageView({
+	image: 'Vandal.jpg',
+	top: 0,
+	height: '20%',
+	width: '30%'
+});
 /*The list of CBE clubs. Currently looking into an easy way to add a color to these rows other than manually adding it behind each
  entry. Might just do that anyways, if someone else comes up with an idea feel free to try it.*/
 var tableData = [];
@@ -33,7 +39,7 @@ return rowViewData;
 var table = Ti.UI.createTableView({
 	headerTitle: 'Pick a club to learn more!',
 	data: bindRowData(),
-	top: 20
+	top: '20%'
 });
 //this is for finding the file containing the CBE window and information
 function getTag(cbe) {
@@ -83,5 +89,6 @@ table.addEventListener ('click', function(e)
 	newWin.open();
 });
 //Adds table to the window, then opens it
+win.add(image);
 win.add(table);
 win.open();
