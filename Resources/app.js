@@ -31,7 +31,7 @@ return rowViewData;
 }
 /*Simply put, adds the above data to the table. */
 var table = Ti.UI.createTableView({
-	headTitle: 'Pick a club to learn more!',
+	headerTitle: 'Pick a club to learn more!',
 	data: bindRowData()
 });
 //this is for finding the file containing the CBE window and information
