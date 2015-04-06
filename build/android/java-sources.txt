@@ -1,7 +1,0 @@
-"/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/build/android/gen/android/support/v7/appcompat/R.java"
-"/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/build/android/gen/com/hack/cbe/ApplicationStylesheet.java"
-"/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/build/android/gen/com/hack/cbe/CbeActivity.java"
-"/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/build/android/gen/com/hack/cbe/CbeAppInfo.java"
-"/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/build/android/gen/com/hack/cbe/CbeApplication.java"
-"/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/build/android/gen/com/hack/cbe/R.java"
-"/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/build/android/gen/ti/modules/titanium/ui/R.java"
