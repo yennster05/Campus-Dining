@@ -15,7 +15,7 @@ var tableData = [];
 	tableData[8] = 'Human Resource Management Club';
 //creating an empty array to store the rows in
 var rowViewData = [];
-//this function is binding the rows together with the background color. Attempting to add a custom trait of 'cbeName' to each row (Matches the title data atm)
+//this function is binding the rows together with the background color. Custom Trait of cbeTag to keep track of each entry
 function bindRowData (){
 for (var i=0; i<tableData.length; i++) {
 var rowView = Ti.UI.createTableViewRow({
@@ -51,6 +51,7 @@ function getTag(cbe) {
 	}
 	return msg;
 };
+// * * * * * * THIS HAS BEEN REMOVED AND NO LONGER IN USE. CODE LEFT FOR REFERENCE ONLY * * * * * *
 /*This creates a window to display the information from the above switch. Currently, it's broken and I don't know why. 
  Suspicion is the switch isn't doing what it should be doing, but I don't know why that is*/
 /*function showCBE (_args) {
@@ -70,7 +71,8 @@ function getTag(cbe) {
 	cbeDisc.add(close);
 	cbeDisc.open();
 }*/
-//takes the custom data from the table (matching the label titles) and passes it through the two functions above.
+
+//takes the reference data from the table and uses it to determine the file name to open
 table.addEventListener ('click', function(e)
 {
 	var newWin = Ti.UI.createWindow({
