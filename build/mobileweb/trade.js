@@ -3,12 +3,14 @@ var win1 = Titanium.UI.currentWindow;
 //var masterVw = Ti.UI.createView ({layout: 'vertical'});
 
 var label = Ti.UI.createLabel ({
-	text: 'A student chapter of the national Society for Human Resource Management (SHRM). There are approximately 350 student chapters found on various campuses nationwide. SHRM is a national processional organization of human resource practitioners, educators, and various professionals involved with human resources. \n\nFaculty Advisor: Jan Rauk\nEmail: jrauk@uidaho.edu',
-	top: '25%'
+	text: 'Info: Market for students to purchase grocery items and other snacks and drinks located on 6th Street',
+	top: '35%',
+	width: '90%',
+	color: '#000000'
 });
 var button = Ti.UI.createButton ({
 	title: 'View More Dining',
-	top: '65%'
+	top: '90%'
 });
 
 button.addEventListener('click', function(e){

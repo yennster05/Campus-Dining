@@ -45,7 +45,7 @@ public final class CbeAppInfo implements ITiAppInfo
 	}
 
 	public String getDescription() {
-		return "";
+		return "undefined";
 	}
 
 	public String getIcon() {

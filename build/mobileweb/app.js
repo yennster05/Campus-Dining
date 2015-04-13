@@ -10,7 +10,7 @@ var image = Ti.UI.createImageView({
 /*The list of CBE clubs. Currently looking into an easy way to add a color to these rows other than manually adding it behind each
  entry. Might just do that anyways, if someone else comes up with an idea feel free to try it.*/
 var tableData = [];
-	tableData[0] = 'Bobs Place'; 
+	tableData[0] = "Bob's Place"; 
 	tableData[1] = "Bogey's Grill"; 
 	tableData[2] = 'Cobrizo Mexican Grill'; 
 	tableData[3] = "Denny's All Nighter";
@@ -27,8 +27,9 @@ for (var i=0; i<tableData.length; i++) {
 var rowView = Ti.UI.createTableViewRow({
 	title: tableData[i],
 	height:50,
-	backgroundColor: '#B29600',
-	cbeTag: i
+	backgroundColor: "#B18E5F",
+	color: "#000000",
+	CampusDiningTag: i
 });
 //Pushing the row data into the finished array
 rowViewData.push(rowView);
@@ -42,8 +43,8 @@ var table = Ti.UI.createTableView({
 	top: '20%'
 });
 //this is for finding the file containing the CBE window and information
-function getTag(cbe) {
-	var indicator = cbe + 1;
+function getTag(CampusDining) {
+	var indicator = CampusDining + 1;
 	var msg;
 	switch (indicator) {
 		case 1: msg = 'bob.js'; break;
@@ -84,7 +85,7 @@ table.addEventListener ('click', function(e)
 {
 	var newWin = Ti.UI.createWindow({
 		url: getTag(e.source.cbeTag),
-		backgroundColor: '#B29600'
+		backgroundColor: '#B18E5F'
 	});
 	newWin.open();
 });

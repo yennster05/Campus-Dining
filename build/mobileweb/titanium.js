@@ -7,7 +7,7 @@ var require = {
 		analytics: true,
 		copyright: "2015 by Peter",
 		deployType: "development",
-		description: "",
+		description: "undefined",
 		guid: "e6e4eb29-f586-4a91-a3c4-8560c71a0c3f",
 		id: "com.hack.cbe",
 		name: "CBE",

@@ -1,14 +1,25 @@
+Ti.UI.backgroundColor = 'Black';
+var win = Ti.UI.createWindow();
+var image = Ti.UI.createImageView({
+	image: 'stov.jpg',
+	top: 0,
+	height: '30%',
+	width: '100%'
+});
+
 var win1 = Titanium.UI.currentWindow;
 
 //var masterVw = Ti.UI.createView ({layout: 'vertical'});
 
 var label = Ti.UI.createLabel ({
-	text: 'The Operation Management club is a good place to find out more about the major. The club is made up of students in the majors and anyone else interested in operations management. The club takes tours of area manufacturing operations, invites in guest speakers (particularly from companies that recruit POM majors), attends meetings of the American Production and Inventory Control Society (APICS - a professional society made up mostly of managers working in operations), and meets occasionally for social activities. All students are welcome to attend Operation Management club meetings. \n\nFaculty Advisor: John Lawrence\nEmail: jjl@uidaho.edu',
-	top: '25%'
+	text: "Info: Stover's offers an enticing pita sandwich made with high quality meats, cheeses, and garden-fresh produce. To make your meal complete add a fresh cup or bowl of soup. If you are an early riser start your morning with a fresh-brewed cup of Starbucks coffee, breakfast or a delicious pastry.",
+	top: '35%',
+	width: '90%',
+	color: '#000000'
 });
 var button = Ti.UI.createButton ({
 	title: 'View More Dining',
-	top: '65%'
+	top: '90%'
 });
 
 button.addEventListener('click', function(e){
@@ -22,3 +33,4 @@ button.addEventListener('click', function(e){
 win1.add(label);
 win1.add(button);
 win1.open();
+win1.add(image);
