@@ -84,7 +84,7 @@ function getTag(CampusDining) {
 table.addEventListener ('click', function(e)
 {
 	var newWin = Ti.UI.createWindow({
-		url: getTag(e.source.cbeTag),
+		url: getTag(e.source.CampusDiningTag),
 		backgroundColor: '#B18E5F'
 	});
 	newWin.open();

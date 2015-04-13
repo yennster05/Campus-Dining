@@ -1,3 +1,11 @@
+var win = Titanium.UI.createWindow({title: "Hello"});
+var tab = Titanium.UI.createTab({
+    window:mywin,
+    title:'Hello',
+    icon:'Vandal2.jpg'
+});
+tabGroup.addTab(tab);
+
 Ti.UI.backgroundColor = 'Black';
 var win = Ti.UI.createWindow();
 var image = Ti.UI.createImageView({

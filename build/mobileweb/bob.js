@@ -1,22 +1,12 @@
-var tabGroup = Titanium.UI.createTabGroup();
-var win1 = Titanium.UI.createWindow({
-	title:'Hours',
-	backroundColor: '#000000'
+var win = Titanium.UI.createWindow({title: "Hello"});
+var tab = Titanium.UI.createTab({
+    window:mywin,
+    title:'Hello',
+    icon:'Vandal2.jpg'
 });
-var Hours = Titanium.UI.createTab({
-	icon:'KS_nav_views.png',
-	title: 'Hours',
-	window:win1
-});
+tabGroup.addTab(tab);
 
-Ti.UI.backgroundColor = 'Black';
-var win = Ti.UI.createWindow();
-var image = Ti.UI.createImageView({
-	image: 'Bobs.jpg',
-	top: 0,
-	height: '30%',
-	width: '100%'
-});
+
 
 var win1 = Titanium.UI.currentWindow;
 	backgroundColor: "B18E5F";
@@ -46,3 +36,4 @@ win1.add(label);
 win1.add(button);
 win1.open();
 win1.add(image);
+
