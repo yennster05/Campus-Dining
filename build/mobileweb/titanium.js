@@ -5,14 +5,14 @@
 var require = {
 	app: {
 		analytics: true,
-		copyright: "2015 by Peter",
+		copyright: "2015 by Andrew",
 		deployType: "development",
 		description: "undefined",
 		guid: "e6e4eb29-f586-4a91-a3c4-8560c71a0c3f",
-		id: "com.hack.cbe",
-		name: "CBE",
+		id: "com.hack.campusdining",
+		name: "Campus Dining",
 		names: {},
-		publisher: "Peter",
+		publisher: "Andrew",
 		url: "http://",
 		version: "1.0"
 	},
@@ -36,8 +36,8 @@ var require = {
 	locales: [],
 	packages: [{"name":"Ti","location":"./titanium","main":"./Ti"}],
 	project: {
-		id: "com.hack.cbe",
-		name: "CBE"
+		id: "com.hack.campusdining",
+		name: "Campus Dining"
 	},
 	ti: {
 		analyticsPlatformName: "mobileweb",
