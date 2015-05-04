@@ -1,1 +1,1 @@
-/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/Resources/app.js
+/Users/andrewyenney/Documents/Titanium_Studio_Workspace/CampusDining/Resources/app.js

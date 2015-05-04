@@ -1,1 +1,1 @@
-/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/Resources/denny.js
+/Users/andrewyenney/Documents/Titanium_Studio_Workspace/CampusDining/Resources/denny.js

@@ -1,1 +1,1 @@
-/Users/andrewyenney/Documents/Titanium_Studio_Workspace/Hackahon4/Resources/jamba.js
+/Users/andrewyenney/Documents/Titanium_Studio_Workspace/CampusDining/Resources/jamba.js

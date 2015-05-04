@@ -1,7 +1,5 @@
 Ti.UI.backgroundColor = 'Black';
-var tabGroup = Titanium.UI.createTabGroup();
 
-var win = Ti.UI.createWindow();
 var image = Ti.UI.createImageView({
 	image: 'Bobs.jpg',
 	top: 0,
@@ -12,13 +10,26 @@ var image = Ti.UI.createImageView({
 var win1 = Titanium.UI.currentWindow;
 	backgroundColor: "B18E5F";
 	
+var tabGroup = Titanium.UI.createTabGroup();
+
+var win = Ti.UI.createWindow({
+	title:'Menu',
+	backgroundColor:'#fff'
+});
+	
 var tab1 = Titanium.UI.createTab({
-	icon: 'KS_nav_views.png',
-	title: 'Home',
+	icon: 'tab1icon.png',
+	title: 'Menu',
 	window:win1
 });
 
 tabGroup.addTab(tab1);
+
+tab1.addEventListener('click', function(e){
+	win1.close();
+	win1 = null;
+});
+	
 
 //var masterVw = Ti.UI.createView ({layout: 'vertical'});
 
@@ -28,21 +39,11 @@ var label = Ti.UI.createLabel ({
 		width: '90%',
 		color: '#000000'
 });
-var button = Ti.UI.createButton ({
-	title: 'View More Dining',
-	top: '90%'
-});
-
-button.addEventListener('click', function(e){
-	win1.close();
-	win1 = null;
-});
 
 //masterVw.add(button);
 //masterVw.add(label);
 //win1.add(masterVw);
 win1.add(label);
-win1.add(button);
 win1.open();
 win1.add(image);
 tabGroup.open();

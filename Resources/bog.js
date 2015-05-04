@@ -17,20 +17,20 @@ var label = Ti.UI.createLabel ({
 	width: '90%',
 	color: '#000000'
 });
-var button = Ti.UI.createButton ({
-	title: 'View More Dining',
-	top: '90%'
-});
 
-button.addEventListener('click', function(e){
-	win1.close();
-	win1 = null;
-});
 
+var bb1 = Titanium.UI.createButtonBar({
+	labels:['One','Two','Three'],
+	backgroundColor:'#336699',
+	top:50,
+	style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
+	height:25,
+	width:200
+});
 //masterVw.add(button);
 //masterVw.add(label);
 //win1.add(masterVw);
 win1.add(label);
-win1.add(button);
 win1.open();
 win1.add(image);
+win1.add(bb1);
