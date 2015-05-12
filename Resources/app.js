@@ -1,3 +1,4 @@
+///Ti.include('denny.js');
 //Starting off with a black background as we plan to have the rows be a golden color
 Ti.UI.backgroundColor = 'Black';
 var win = Ti.UI.createWindow();
@@ -18,7 +19,7 @@ var tableData = [];
 	tableData[5] = 'Jamba Juice';
 	tableData[6] = 'Paradise Creek Pizza';
 	tableData[7] = 'Stovers';
-	tableData[8] = 'Traders Market';
+	tableData[8] = 'The Grid';
 //creating an empty array to store the rows in
 var rowViewData = [];
 //this function is binding the rows together with the background color. Custom Trait of cbeTag to keep track of each entry
@@ -55,7 +56,7 @@ function getTag(CampusDining) {
 		case 6: msg = 'jamba.js'; break;
 		case 7: msg = 'pcp.js'; break;
 		case 8: msg = 'stov.js'; break;
-		case 9: msg = 'trade.js'; break;
+		case 9: msg = 'thegrid.js'; break;
 	}
 	return msg;
 };
@@ -89,6 +90,22 @@ table.addEventListener ('click', function(e)
 	});
 	newWin.open();
 });
+//
+/*
+var closeButton = Ti.UI.createButton({
+	title:'close', top:'85%', color:'red'
+});
+closeButton.addEventListener('click', function(){
+	tabGroup.close();
+	win1.close();
+	win2.close();
+	win.open();
+});
+
+win1.add(closeButton);
+*/
+//
+
 //Adds table to the window, then opens it
 win.add(image);
 win.add(table);

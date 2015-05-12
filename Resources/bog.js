@@ -10,27 +10,61 @@ var image = Ti.UI.createImageView({
 var win1 = Titanium.UI.currentWindow;
 
 //var masterVw = Ti.UI.createView ({layout: 'vertical'});
+var tabGroup = Titanium.UI.createTabGroup();
+
+var win1 = Titanium.UI.createWindow({
+	title:'Info',
+	backgroundColor:'#B18E5F'
+});
+var tab1 = Titanium.UI.createTab({
+	icon:'Home.png',
+	title:'Info',
+	window:win1
+	
+});
+var win2 = Titanium.UI.createWindow({
+	title:'Menu',
+	backgroundColor:'#B18E5F'
+});
+var tab2 = Titanium.UI.createTab({
+	icon:'KS_nav_views.png',
+	title:'Menu',
+	window:win2
+});
+
+tabGroup.addTab(tab1);
+tabGroup.addTab(tab2);
 
 var label = Ti.UI.createLabel ({
-	text: "Info: Want a place to escape? Visit Bogey’s Grill located at the University of Idaho Golf Course. Enjoy a juicy delicious burger and crispy fries while relaxing on our patio which has theone of the best views of the Palouse. For the golfer on the move Bogey’s offers a great Vandal Sausage and grab-n-go items that will surely satisfy the heartiest appetites. If you are looking for just a snack and beverage check out our large selection of Pepsi products. You’ll find a warm welcome at Bogey’s Grill and we promise that your experience here will be unforgettable.",
+	text: "Location: University of Idaho Golf Course\n\nInfo: Want a place to escape? Visit Bogey’s Grill located at the University of Idaho Golf Course. Enjoy a juicy delicious burger and crispy fries while relaxing on our patio which has one of the best views of the Palouse. For the golfer on the move, Bogey’s offers a great Vandal Sausage and grab-n-go items that will surely satisfy the heartiest appetites. If you are looking for just a snack and beverage, check out our large selection of Pepsi products. You’ll find a warm welcome at Bogey’s Grill and we promise that your experience here will be unforgettable.\n\nHours of Operation:\nMonday - Sunday: 9am - 7pm",
+	font:{fontSize:12,fontFamily:'Calibri'},
 	top: '35%',
 	width: '90%',
 	color: '#000000'
 });
 
-
-var bb1 = Titanium.UI.createButtonBar({
-	labels:['One','Two','Three'],
-	backgroundColor:'#336699',
-	top:50,
-	style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
-	height:25,
-	width:200
+var label2 = Ti.UI.createLabel ({
+	text: "Deli:\nMade to Order\n\nPizza:\nPepperoni\nSausage\nCheese\n\nGrill:\nChicken Sandwich\nHamburger\nVeggie Burger",
+	font:{fontSize:12,fontFamily:'Calibri'},
+	top: '35%',
+	width: '90%',
+	color: '#000000'
 });
+
+var image2 = Ti.UI.createImageView({
+	image: 'Bogeys.jpg',
+	top: 0,
+	height: '30%',
+	width: '100%'
+});
+
+
 //masterVw.add(button);
 //masterVw.add(label);
 //win1.add(masterVw);
 win1.add(label);
 win1.open();
 win1.add(image);
-win1.add(bb1);
+tabGroup.open();
+win2.add(label2);
+win2.add(image2);

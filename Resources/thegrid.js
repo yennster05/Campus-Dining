@@ -1,11 +1,12 @@
 Ti.UI.backgroundColor = 'Black';
 var win = Ti.UI.createWindow();
 var image = Ti.UI.createImageView({
-	image: 'stov.jpg',
+	image: 'thegrid.jpg',
 	top: 0,
 	height: '30%',
 	width: '100%'
 });
+
 
 var win1 = Titanium.UI.currentWindow;
 
@@ -36,7 +37,7 @@ tabGroup.addTab(tab1);
 tabGroup.addTab(tab2);
 
 var label = Ti.UI.createLabel ({
-	text: "Location: J.A. Albertson Building\n\nInfo: Stover's offers an enticing pita sandwich made with high quality meats, cheeses, and garden-fresh produce. To make your meal complete add a fresh cup or bowl of soup. If you are an early riser start your morning with a fresh-brewed cup of Starbucks coffee, breakfast or a delicious pastry.",
+	text: 'Info: Market for students to purchase grocery items and other snacks and drinks located on 6th Street',
 	font:{fontSize:12,fontFamily:'Calibri'},
 	top: '35%',
 	width: '90%',
@@ -44,7 +45,7 @@ var label = Ti.UI.createLabel ({
 });
 
 var label2 = Ti.UI.createLabel ({
-	text: "Breakfast Burritos:\nMade to order: $3.99\n\nPeta's:\nMade to Order: $4.79",
+	text: 'Items',
 	font:{fontSize:12,fontFamily:'Calibri'},
 	top: '35%',
 	width: '90%',
@@ -52,7 +53,7 @@ var label2 = Ti.UI.createLabel ({
 });
 
 var image2 = Ti.UI.createImageView({
-	image: 'stov.jpg',
+	image: 'thegrid.jpg',
 	top: 0,
 	height: '30%',
 	width: '100%'
